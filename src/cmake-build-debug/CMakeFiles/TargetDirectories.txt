@@ -1,0 +1,3 @@
+D:/coding_learning/ncnn_example/src/cmake-build-debug/CMakeFiles/VisionEngine.dir
+D:/coding_learning/ncnn_example/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/coding_learning/ncnn_example/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir

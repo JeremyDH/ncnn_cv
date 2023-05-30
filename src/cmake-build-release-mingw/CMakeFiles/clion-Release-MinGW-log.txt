@@ -1,0 +1,73 @@
+"D:\sofeware\clion\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release "-DCMAKE_MAKE_PROGRAM=D:/sofeware/clion/clion/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\coding_learning\ncnn_example\src -B D:\coding_learning\ncnn_example\src\cmake-build-release-mingw
+CMake Warning (dev) in CMakeLists.txt:
+  No project() command is present.  The top-level CMakeLists.txt file must
+  contain a literal, direct call to the project() command.  Add a line of
+  code such as
+
+    project(ProjectName)
+
+  near the top of the file, but after cmake_minimum_required().
+
+  CMake is pretending there is a "project(Project)" command on the first
+  line.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+D:/coding_learning/ncnn_example/src/cmake-build-debug/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cppD:/coding_learning/ncnn_example/src/cmake-build-release-mingw/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cppD:/coding_learning/ncnn_example/src/common/common.cppD:/coding_learning/ncnn_example/src/face/detecter/detecter.cpp
+Opencv Version: 
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as
+
+    cmake_minimum_required(VERSION 3.24)
+
+  should be added at the top of the file.  The version specified may be lower
+  if you wish to support older CMake versions for this project.  For more
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+CMake Warning at CMakeLists.txt:38 (target_link_libraries):
+  Target "VisionEngine" requests linking to directory
+  "D:/coding_learning/ncnn_example/src/common".  Targets may link only to
+  libraries.  CMake is dropping the item.
+
+
+CMake Warning at CMakeLists.txt:38 (target_link_libraries):
+  Target "VisionEngine" requests linking to directory
+  "D:/coding_learning/ncnn_example/src/face".  Targets may link only to
+  libraries.  CMake is dropping the item.
+
+
+CMake Warning at CMakeLists.txt:38 (target_link_libraries):
+  Target "VisionEngine" requests linking to directory
+  "D:/coding_learning/ncnn_example/src/face/detecter".  Targets may link only
+  to libraries.  CMake is dropping the item.
+
+
+CMake Warning (dev) at CMakeLists.txt:7 (add_library):
+  Policy CMP0003 should be set before this line.  Add code such as
+
+    if(COMMAND cmake_policy)
+      cmake_policy(SET CMP0003 NEW)
+    endif(COMMAND cmake_policy)
+
+  as early as possible but after the most recent call to
+  cmake_minimum_required or cmake_policy(VERSION).  This warning appears
+  because target "VisionEngine" links to some libraries for which the linker
+  must search:
+
+    ncnn
+
+  and other libraries with known full path:
+
+    D:/sofeware/OpenCV/opencv/mingw_build/lib/libopencv_highgui470.dll.a
+    D:/coding_learning/ncnn_example/src/../include
+
+  CMake is adding directories in the second list to the linker search path in
+  case they are needed to find libraries from the first list (for backwards
+  compatibility with CMake 2.4).  Set policy CMP0003 to OLD or NEW to enable
+  or disable this behavior explicitly.  Run "cmake --help-policy CMP0003" for
+  more information.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Generating done
+-- Build files have been written to: D:/coding_learning/ncnn_example/src/cmake-build-release-mingw
