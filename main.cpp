@@ -3,7 +3,7 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 #include "ncnn/net.h"
-#include <ncnn/
+
 
 
 using namespace std;
