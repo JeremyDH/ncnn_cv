@@ -1,0 +1,12 @@
+"D:\Software\DeepLearning\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/Software/DeepLearning/clion/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\coding\git_repositories\ncnn_cv -B D:\coding\git_repositories\ncnn_cv\cmake-build-debug-mingw
+D:/coding/git_repositories/ncnn_cv/src/cmake-build-debug/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cppD:/coding/git_repositories/ncnn_cv/src/cmake-build-release-mingw/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cppD:/coding/git_repositories/ncnn_cv/src/common/common.cppD:/coding/git_repositories/ncnn_cv/src/face/detecter/detecter.cppD:/coding/git_repositories/ncnn_cv/src/face/detecter/retinaface/retinaface.cppD:/coding/git_repositories/ncnn_cv/src/face/face_engine.cppD:/coding/git_repositories/ncnn_cv/src/face/landmarker/insightface/insightface.cppD:/coding/git_repositories/ncnn_cv/src/face/landmarker/landmarker.cpp
+-- OpenCV ARCH: x64
+-- OpenCV RUNTIME: mingw
+-- OpenCV STATIC: OFF
+-- Found OpenCV 4.6.0 in D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib
+-- You might need to add D:\Software\tools\opencv\opencv\mingw_build\install\x64\mingw\bin to your PATH to be able to run your applications.
+Opencv Version: 
+Building with OpenMP
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw

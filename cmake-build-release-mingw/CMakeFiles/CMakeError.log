@@ -1,0 +1,39 @@
+Performing C++ SOURCE FILE Test NCNN_COMPILER_SUPPORT_X86_AVX_VNNI failed with the following output:
+Change Dir: D:/coding/git_repositories/ncnn_cv/cmake-build-release-mingw/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Software/DeepLearning/clion/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe cmTC_384c9 && [1/2] Building CXX object CMakeFiles/cmTC_384c9.dir/src.cxx.obj
+FAILED: CMakeFiles/cmTC_384c9.dir/src.cxx.obj 
+D:\Software\tools\MinGW\mingw64\bin\c++.exe -DNCNN_COMPILER_SUPPORT_X86_AVX_VNNI  -mfma -mf16c -mavx2 -mavxvnni -fdiagnostics-color=always -o CMakeFiles/cmTC_384c9.dir/src.cxx.obj -c D:/coding/git_repositories/ncnn_cv/cmake-build-release-mingw/CMakeFiles/CMakeTmp/src.cxx
+c++.exe: error: unrecognized command line option '-mavxvnni'; did you mean '-mavx512vnni'?
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <immintrin.h>
+int main() { __m256i _s, _a, _b; _s = _mm256_dpwssd_epi32(_s, _a, _b); return 0; }
+Performing C++ SOURCE FILE Test NCNN_COMPILER_SUPPORT_X86_AVX512_BF16 failed with the following output:
+Change Dir: D:/coding/git_repositories/ncnn_cv/cmake-build-release-mingw/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Software/DeepLearning/clion/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe cmTC_21732 && [1/2] Building CXX object CMakeFiles/cmTC_21732.dir/src.cxx.obj
+FAILED: CMakeFiles/cmTC_21732.dir/src.cxx.obj 
+D:\Software\tools\MinGW\mingw64\bin\c++.exe -DNCNN_COMPILER_SUPPORT_X86_AVX512_BF16  -mfma -mf16c -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -mavx512bf16 -fdiagnostics-color=always -o CMakeFiles/cmTC_21732.dir/src.cxx.obj -c D:/coding/git_repositories/ncnn_cv/cmake-build-release-mingw/CMakeFiles/CMakeTmp/src.cxx
+c++.exe: error: unrecognized command line option '-mavx512bf16'; did you mean '-mavx512bw'?
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <immintrin.h>
+int main() { __m256bh _s; __m512bh _a, _b; _s = _mm512_cvtneps_pbh(_mm512_dpbf16_ps(_mm512_cvtpbh_ps(_s), _a, _b)); return 0; }
+Performing C++ SOURCE FILE Test NCNN_COMPILER_SUPPORT_X86_AVX512_FP16 failed with the following output:
+Change Dir: D:/coding/git_repositories/ncnn_cv/cmake-build-release-mingw/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Software/DeepLearning/clion/CLion 2022.3.2/bin/ninja/win/x64/ninja.exe cmTC_53300 && [1/2] Building CXX object CMakeFiles/cmTC_53300.dir/src.cxx.obj
+FAILED: CMakeFiles/cmTC_53300.dir/src.cxx.obj 
+D:\Software\tools\MinGW\mingw64\bin\c++.exe -DNCNN_COMPILER_SUPPORT_X86_AVX512_FP16  -mfma -mf16c -mavx512f -mavx512cd -mavx512bw -mavx512dq -mavx512vl -mavx512fp16 -fdiagnostics-color=always -o CMakeFiles/cmTC_53300.dir/src.cxx.obj -c D:/coding/git_repositories/ncnn_cv/cmake-build-release-mingw/CMakeFiles/CMakeTmp/src.cxx
+c++.exe: error: unrecognized command line option '-mavx512fp16'; did you mean '-mavx512f'?
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <immintrin.h>
+int main() { __m512h _s, _a, _b; _s = _mm512_fmadd_ph(_s, _a, _b); __m512 _s2; _s2 = _mm512_cvtxph_ps(_mm512_cvtxps_ph(_s2)); return 0; }
