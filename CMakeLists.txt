@@ -44,15 +44,16 @@ project(VisionEngine)
 
 Option(MIRROR_OPENMP "openmp support" ON)
 Option(MIRROR_VULKAN "vulkan compute used" OFF)
-Option(MIRROR_INSTALL_SDK "install mirror library and headers" ON)
+Option(MIRROR_INSTALL_SDK "install mirror library and headers" OFF)
 Option(MIRROR_BUILD_FACE "build face test" ON)
+option(MIRROR_BUILD_OBJECT "build object test" ON)
 
 set(CMAKE_PREFIX_PATH
         ${CMAKE_PREFIX_PATH}
-        D:/software_tool/protobuf-cpp-3.20.3/install)
+        D:\\Software\\tools\\protobuf\\protobuf-cpp-3.21.12\\protobuf-3.21.12\\install)
 
 find_package(Protobuf REQUIRED)
 
-add_subdirectory(ncnn-20230517-full-source)
+#add_subdirectory(ncnn-20230517-full-source)
 
 add_subdirectory(src)
