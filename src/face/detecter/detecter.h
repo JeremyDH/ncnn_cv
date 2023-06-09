@@ -10,7 +10,7 @@
 
 namespace mirror
 {
-    //抽象类对检测器
+    //抽象类检测器
     class Detecter {
     public:
         virtual ~Detecter() {};
@@ -39,6 +39,15 @@ namespace mirror
     public:
         RetinafaceFactory(){}
         ~RetinafaceFactory() {}
+        Detecter* CreateDetecter();
+    };
+
+    //mtcnn人脸检测
+    class MtcnnfaceFactory : public DetecterFactory
+    {
+    public:
+        MtcnnfaceFactory(){}
+        ~MtcnnfaceFactory(){}
         Detecter* CreateDetecter();
     };
 }
