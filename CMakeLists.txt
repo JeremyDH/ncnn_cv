@@ -46,7 +46,7 @@ Option(MIRROR_OPENMP "openmp support" ON)
 Option(MIRROR_VULKAN "vulkan compute used" OFF)
 Option(MIRROR_INSTALL_SDK "install mirror library and headers" OFF)
 Option(MIRROR_BUILD_FACE "build face test" ON)
-option(MIRROR_BUILD_OBJECT "build object test" ON)
+option(MIRROR_BUILD_OBJECT "build object test" OFF)
 
 set(CMAKE_PREFIX_PATH
         ${CMAKE_PREFIX_PATH}

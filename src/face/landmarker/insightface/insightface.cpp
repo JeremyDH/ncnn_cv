@@ -6,16 +6,26 @@
 #include "iostream"
 #include "string"
 #include "../../../common/common.h"
+#include "opencv2/imgproc.hpp"
+#include "opencv2/highgui.hpp"
 
 namespace mirror
 {
     Insightface::Insightface():
     insightface_landmarker_net_(new ncnn::Net()),
-    initialized_(false){}
+    initialized_(false){
+#if MIRROR_VULKAN
+        ncnn::create_gpu_instance();
+    insightface_landmarker_net_->opt.use_vulkan_compute = true;
+#endif // MIRROR_VULKAN
+    }
 
     Insightface::~Insightface() {
         if(insightface_landmarker_net_){
             insightface_landmarker_net_->clear();
+#if MIRROR_VULKAN
+            ncnn::destroy_gpu_instance();
+#endif // MIRROR_VULKAN
         }
     }
 
@@ -30,6 +40,8 @@ namespace mirror
             return -1;
         }
         initialized_ = true ;
+
+        return 0;
     }
 
     int Insightface::ExtractKeypoints(const cv::Mat &img_src, const cv::Rect &face,
@@ -48,6 +60,7 @@ namespace mirror
         cv::Rect face_enlarged = face;
         const float enlarge_scale = 1.5f;
         EnlargeRect(enlarge_scale, &face_enlarged);
+
         //2 square the rect
         RectifyRect(&face_enlarged);
         face_enlarged = face_enlarged & cv::Rect (0, 0, img_src.cols, img_src.rows);
@@ -67,6 +80,7 @@ namespace mirror
             float y = (out[2 * i + 1] + 1.0f) * img_face.rows / 2 + face_enlarged.y;
             keypoints->push_back(cv::Point2f(x, y));
         }
+        std::cout << "end extact keypoints." << std::endl;
         return 0;
 
     }

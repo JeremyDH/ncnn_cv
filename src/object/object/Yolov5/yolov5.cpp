@@ -196,22 +196,22 @@ namespace mirror{
         std::string yolov5_param = std::string(root_path) + "/yolov5s_6.0.param";
         std::string yolov5_bin = std::string(root_path) + "/yolov5s_6.0.bin";
 
-//#if YOLOV5_V62
-//        if(yolov5->load_param(yolov5_param.c_str()) == -1 ||
-//           yolov5->load_model(yolov5_bin.c_str()) == -1)
-//        {
-//            std::cout << "load model is failed"  << std::endl;
-//            return 10000;
-//        }
-
-        yolov5->register_custom_layer("YoloV5Focus", YoloV5Focus_layer_creator);
-
-        if (yolov5->load_param(yolov5_param.c_str() ) != -1 ||
-            yolov5->load_model(yolov5_bin != -1))
+#if YOLOV5_V62
+        if(yolov5->load_param(yolov5_param.c_str()) == -1 ||
+           yolov5->load_model(yolov5_bin.c_str()) == -1)
         {
             std::cout << "load model is failed"  << std::endl;
             return 10000;
         }
+
+//        yolov5->register_custom_layer("YoloV5Focus", YoloV5Focus_layer_creator);
+//
+//        if (yolov5->load_param(yolov5_param.c_str() ) != -1 ||
+//            yolov5->load_model(yolov5_bin != -1))
+//        {
+//            std::cout << "load model is failed"  << std::endl;
+//            return 10000;
+//        }
 
 
         intialized_ = true;

@@ -5,7 +5,7 @@
 #ifndef _RETINAFACE_H_
 #define _RETINAFACE_H_
 #include "../detecter.h"
-#include "net.h"
+#include "ncnn/net.h"
 
 namespace mirror
 {

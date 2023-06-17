@@ -25,6 +25,7 @@ namespace mirror {
     struct ObjectInfo {
         cv::Rect location_;
         float score_;
+        int label;
         std::string name_;
     };
 

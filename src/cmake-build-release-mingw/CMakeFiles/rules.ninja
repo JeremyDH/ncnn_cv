@@ -17,7 +17,7 @@
 rule CXX_COMPILER__VisionEngine_Release
   depfile = $DEP_FILE
   deps = gcc
-  command = D:\sofeware\MinGW\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = D:\Software\tools\MinGW\mingw64\bin\c++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -25,7 +25,7 @@ rule CXX_COMPILER__VisionEngine_Release
 # Rule for linking CXX static library.
 
 rule CXX_STATIC_LIBRARY_LINKER__VisionEngine_Release
-  command = cmd.exe /C "$PRE_LINK && "D:\sofeware\clion\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\sofeware\MinGW\mingw64\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\sofeware\MinGW\mingw64\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
+  command = cmd.exe /C "$PRE_LINK && "D:\Software\DeepLearning\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -E rm -f $TARGET_FILE && D:\Software\tools\MinGW\mingw64\bin\ar.exe qc $TARGET_FILE $LINK_FLAGS $in && D:\Software\tools\MinGW\mingw64\bin\ranlib.exe $TARGET_FILE && $POST_BUILD"
   description = Linking CXX static library $TARGET_FILE
   restat = $RESTAT
 
@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "D:\sofeware\clion\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\coding_learning\ncnn_example\src -BD:\coding_learning\ncnn_example\src\cmake-build-release-mingw
+  command = "D:\Software\DeepLearning\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SD:\coding\git_repositories\ncnn_cv\src -BD:\coding\git_repositories\ncnn_cv\src\cmake-build-release-mingw
   description = Re-running CMake...
   generator = 1
 
@@ -51,7 +51,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = "D:\sofeware\clion\clion\CLion 2022.3.2\bin\ninja\win\x64\ninja.exe" $FILE_ARG -t clean $TARGETS
+  command = "D:\Software\DeepLearning\clion\CLion 2022.3.2\bin\ninja\win\x64\ninja.exe" $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -59,6 +59,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = "D:\sofeware\clion\clion\CLion 2022.3.2\bin\ninja\win\x64\ninja.exe" -t targets
+  command = "D:\Software\DeepLearning\clion\CLion 2022.3.2\bin\ninja\win\x64\ninja.exe" -t targets
   description = All primary targets available:
 

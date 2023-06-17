@@ -13,9 +13,11 @@ namespace mirror
             detecter_factory_2 = new CenterfaceFactory();
             detecter_factory_3 = new MtcnnfaceFactory();
             landmarK_factory_ = new InsightfaceLandmarkerFactory();
+            zq_landmark_factory_ = new ZQLandmarkerFacetory();
 
             detecter_ = detecter_factory_->CreateDetecter();
-            landmarker_ = landmarK_factory_->CreateLandmaker();
+            landmarker_ = landmarK_factory_->CreateLandmarker();
+            zq_ladmarker_ = zq_landmark_factory_->CreateLandmarker();
             detecter_2 = detecter_factory_2->CreateDetecter();
             detecter_3 = detecter_factory_3->CreateDetecter();
 
@@ -57,6 +59,18 @@ namespace mirror
                 delete landmarK_factory_;
                 landmarK_factory_ = nullptr;
             }
+
+            if(zq_ladmarker_)
+            {
+                delete zq_ladmarker_;
+                zq_ladmarker_ = nullptr;
+            }
+
+            if(zq_landmark_factory_)
+            {
+                delete zq_landmark_factory_;
+                zq_landmark_factory_ = nullptr;
+            }
         }
 
         int LoadModel(const char* root_path)
@@ -79,7 +93,13 @@ namespace mirror
 
             if(landmarker_->LoadModel(root_path) != 0)
             {
-                std::cout << "load face recognizer failed." << std::endl;
+                std::cout << "load landmarker_ failed." << std::endl;
+                return 10000;
+            }
+
+            if(zq_ladmarker_->LoadModel(root_path) != 0)
+            {
+                std::cout << "load zq_ladmarker_ failed." << std::endl;
                 return 10000;
             }
 
@@ -90,18 +110,20 @@ namespace mirror
         }
 
         inline int DetectFace(const cv::Mat& img_src, std::vector<FaceInfo>* faces){
-            return detecter_ ->DetectFace(img_src, faces);
+            return detecter_2 ->DetectFace(img_src, faces);
         }
 
         inline int ExtractKeypoints(const cv::Mat& img_src,
                                    const cv::Rect& face, std::vector<cv::Point2f>* keypoints){
-            return landmarker_->ExtractKeypoints(img_src, face, keypoints);
+//            return landmarker_->ExtractKeypoints(img_src, face, keypoints);
+              return zq_ladmarker_->ExtractKeypoints(img_src, face, keypoints);
         }
 
 
     private:
         DetecterFactory* detecter_factory_ = nullptr;
-        LandmarkerFactory*  landmarK_factory_ = nullptr;
+        InsightfaceLandmarkerFactory*  landmarK_factory_ = nullptr;
+        ZQLandmarkerFacetory* zq_landmark_factory_ = nullptr;
         CenterfaceFactory*  detecter_factory_2 = nullptr;
         MtcnnfaceFactory* detecter_factory_3 = nullptr;
 
@@ -113,6 +135,7 @@ namespace mirror
         Detecter* detecter_2 = nullptr;
         Detecter* detecter_3 = nullptr;
         Landmarker* landmarker_ = nullptr;
+        Landmarker* zq_ladmarker_= nullptr;
 
     };
 

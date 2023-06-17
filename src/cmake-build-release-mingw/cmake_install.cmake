@@ -1,4 +1,4 @@
-# Install script for directory: D:/coding_learning/ncnn_example/src
+# Install script for directory: D:/coding/git_repositories/ncnn_cv/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "D:/sofeware/MinGW/mingw64/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "D:/Software/tools/MinGW/mingw64/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/coding_learning/ncnn_example/src/cmake-build-release-mingw/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/coding/git_repositories/ncnn_cv/src/cmake-build-release-mingw/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

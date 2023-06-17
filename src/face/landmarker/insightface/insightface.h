@@ -6,7 +6,7 @@
 #define _FACE_INSIGHTFACE_H_
 
 #include "../landmarker.h"
-#include "net.h"
+#include "ncnn/net.h"
 
 namespace mirror {
     class Insightface : public Landmarker{

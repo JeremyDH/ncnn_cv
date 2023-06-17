@@ -119,61 +119,145 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 build cmake_object_order_depends_target_VisionEngine: phony || src/CMakeFiles/VisionEngine.dir
 
+build src/CMakeFiles/VisionEngine.dir/classifier/Classifier_Engine.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/classifier/Classifier_Engine.cpp || cmake_object_order_depends_target_VisionEngine
+  DEP_FILE = src\CMakeFiles\VisionEngine.dir\classifier\Classifier_Engine.cpp.obj.d
+  FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\classifier
+
+build src/CMakeFiles/VisionEngine.dir/classifier/classifier/Classifier_Detecter.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/classifier/classifier/Classifier_Detecter.cpp || cmake_object_order_depends_target_VisionEngine
+  DEP_FILE = src\CMakeFiles\VisionEngine.dir\classifier\classifier\Classifier_Detecter.cpp.obj.d
+  FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\classifier\classifier
+
+build src/CMakeFiles/VisionEngine.dir/classifier/classifier/mobilenet/mobilenet.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/classifier/classifier/mobilenet/mobilenet.cpp || cmake_object_order_depends_target_VisionEngine
+  DEP_FILE = src\CMakeFiles\VisionEngine.dir\classifier\classifier\mobilenet\mobilenet.cpp.obj.d
+  FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\classifier\classifier\mobilenet
+
+build src/CMakeFiles/VisionEngine.dir/cmake-build-debug-mingw/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/cmake-build-debug-mingw/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp || cmake_object_order_depends_target_VisionEngine
+  DEP_FILE = src\CMakeFiles\VisionEngine.dir\cmake-build-debug-mingw\CMakeFiles\3.24.2\CompilerIdCXX\CMakeCXXCompilerId.cpp.obj.d
+  FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\cmake-build-debug-mingw\CMakeFiles\3.24.2\CompilerIdCXX
+
 build src/CMakeFiles/VisionEngine.dir/cmake-build-debug/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/cmake-build-debug/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp || cmake_object_order_depends_target_VisionEngine
   DEP_FILE = src\CMakeFiles\VisionEngine.dir\cmake-build-debug\CMakeFiles\3.24.2\CompilerIdCXX\CMakeCXXCompilerId.cpp.obj.d
   FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
-  INCLUDES = -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
   OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
   OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\cmake-build-debug\CMakeFiles\3.24.2\CompilerIdCXX
 
 build src/CMakeFiles/VisionEngine.dir/cmake-build-release-mingw/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/cmake-build-release-mingw/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp || cmake_object_order_depends_target_VisionEngine
   DEP_FILE = src\CMakeFiles\VisionEngine.dir\cmake-build-release-mingw\CMakeFiles\3.24.2\CompilerIdCXX\CMakeCXXCompilerId.cpp.obj.d
   FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
-  INCLUDES = -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
   OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
   OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\cmake-build-release-mingw\CMakeFiles\3.24.2\CompilerIdCXX
 
 build src/CMakeFiles/VisionEngine.dir/common/common.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/common/common.cpp || cmake_object_order_depends_target_VisionEngine
   DEP_FILE = src\CMakeFiles\VisionEngine.dir\common\common.cpp.obj.d
   FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
-  INCLUDES = -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
   OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
   OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\common
+
+build src/CMakeFiles/VisionEngine.dir/face/detecter/centerface/centerface.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/face/detecter/centerface/centerface.cpp || cmake_object_order_depends_target_VisionEngine
+  DEP_FILE = src\CMakeFiles\VisionEngine.dir\face\detecter\centerface\centerface.cpp.obj.d
+  FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\face\detecter\centerface
 
 build src/CMakeFiles/VisionEngine.dir/face/detecter/detecter.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/face/detecter/detecter.cpp || cmake_object_order_depends_target_VisionEngine
   DEP_FILE = src\CMakeFiles\VisionEngine.dir\face\detecter\detecter.cpp.obj.d
   FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
-  INCLUDES = -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
   OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
   OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\face\detecter
+
+build src/CMakeFiles/VisionEngine.dir/face/detecter/mtcnn/mtcnn.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/face/detecter/mtcnn/mtcnn.cpp || cmake_object_order_depends_target_VisionEngine
+  DEP_FILE = src\CMakeFiles\VisionEngine.dir\face\detecter\mtcnn\mtcnn.cpp.obj.d
+  FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\face\detecter\mtcnn
 
 build src/CMakeFiles/VisionEngine.dir/face/detecter/retinaface/retinaface.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/face/detecter/retinaface/retinaface.cpp || cmake_object_order_depends_target_VisionEngine
   DEP_FILE = src\CMakeFiles\VisionEngine.dir\face\detecter\retinaface\retinaface.cpp.obj.d
   FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
-  INCLUDES = -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
   OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
   OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\face\detecter\retinaface
 
 build src/CMakeFiles/VisionEngine.dir/face/face_engine.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/face/face_engine.cpp || cmake_object_order_depends_target_VisionEngine
   DEP_FILE = src\CMakeFiles\VisionEngine.dir\face\face_engine.cpp.obj.d
   FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
-  INCLUDES = -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
   OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
   OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\face
 
 build src/CMakeFiles/VisionEngine.dir/face/landmarker/insightface/insightface.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/face/landmarker/insightface/insightface.cpp || cmake_object_order_depends_target_VisionEngine
   DEP_FILE = src\CMakeFiles\VisionEngine.dir\face\landmarker\insightface\insightface.cpp.obj.d
   FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
-  INCLUDES = -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
   OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
   OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\face\landmarker\insightface
 
 build src/CMakeFiles/VisionEngine.dir/face/landmarker/landmarker.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/face/landmarker/landmarker.cpp || cmake_object_order_depends_target_VisionEngine
   DEP_FILE = src\CMakeFiles\VisionEngine.dir\face\landmarker\landmarker.cpp.obj.d
   FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
-  INCLUDES = -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
   OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
   OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\face\landmarker
+
+build src/CMakeFiles/VisionEngine.dir/face/landmarker/zqlandmarker/zqlandmarker.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/face/landmarker/zqlandmarker/zqlandmarker.cpp || cmake_object_order_depends_target_VisionEngine
+  DEP_FILE = src\CMakeFiles\VisionEngine.dir\face\landmarker\zqlandmarker\zqlandmarker.cpp.obj.d
+  FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\face\landmarker\zqlandmarker
+
+build src/CMakeFiles/VisionEngine.dir/face/tracker/tracker.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/face/tracker/tracker.cpp || cmake_object_order_depends_target_VisionEngine
+  DEP_FILE = src\CMakeFiles\VisionEngine.dir\face\tracker\tracker.cpp.obj.d
+  FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\face\tracker
+
+build src/CMakeFiles/VisionEngine.dir/object/object/Object_detecter.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/object/object/Object_detecter.cpp || cmake_object_order_depends_target_VisionEngine
+  DEP_FILE = src\CMakeFiles\VisionEngine.dir\object\object\Object_detecter.cpp.obj.d
+  FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\object\object
+
+build src/CMakeFiles/VisionEngine.dir/object/object/Yolov5/yolov5.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/object/object/Yolov5/yolov5.cpp || cmake_object_order_depends_target_VisionEngine
+  DEP_FILE = src\CMakeFiles\VisionEngine.dir\object\object\Yolov5\yolov5.cpp.obj.d
+  FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\object\object\Yolov5
+
+build src/CMakeFiles/VisionEngine.dir/object/object/mobilenetssd/mobilenetssd.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/object/object/mobilenetssd/mobilenetssd.cpp || cmake_object_order_depends_target_VisionEngine
+  DEP_FILE = src\CMakeFiles\VisionEngine.dir\object\object\mobilenetssd\mobilenetssd.cpp.obj.d
+  FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\object\object\mobilenetssd
+
+build src/CMakeFiles/VisionEngine.dir/object/object_engine.cpp.obj: CXX_COMPILER__VisionEngine_Release D$:/coding/git_repositories/ncnn_cv/src/object/object_engine.cpp || cmake_object_order_depends_target_VisionEngine
+  DEP_FILE = src\CMakeFiles\VisionEngine.dir\object\object_engine.cpp.obj.d
+  FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\object
 
 
 # =============================================================================
@@ -183,7 +267,7 @@ build src/CMakeFiles/VisionEngine.dir/face/landmarker/landmarker.cpp.obj: CXX_CO
 #############################################
 # Link the static library src\libVisionEngine.a
 
-build src/libVisionEngine.a: CXX_STATIC_LIBRARY_LINKER__VisionEngine_Release src/CMakeFiles/VisionEngine.dir/cmake-build-debug/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj src/CMakeFiles/VisionEngine.dir/cmake-build-release-mingw/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj src/CMakeFiles/VisionEngine.dir/common/common.cpp.obj src/CMakeFiles/VisionEngine.dir/face/detecter/detecter.cpp.obj src/CMakeFiles/VisionEngine.dir/face/detecter/retinaface/retinaface.cpp.obj src/CMakeFiles/VisionEngine.dir/face/face_engine.cpp.obj src/CMakeFiles/VisionEngine.dir/face/landmarker/insightface/insightface.cpp.obj src/CMakeFiles/VisionEngine.dir/face/landmarker/landmarker.cpp.obj
+build src/libVisionEngine.a: CXX_STATIC_LIBRARY_LINKER__VisionEngine_Release src/CMakeFiles/VisionEngine.dir/classifier/Classifier_Engine.cpp.obj src/CMakeFiles/VisionEngine.dir/classifier/classifier/Classifier_Detecter.cpp.obj src/CMakeFiles/VisionEngine.dir/classifier/classifier/mobilenet/mobilenet.cpp.obj src/CMakeFiles/VisionEngine.dir/cmake-build-debug-mingw/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj src/CMakeFiles/VisionEngine.dir/cmake-build-debug/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj src/CMakeFiles/VisionEngine.dir/cmake-build-release-mingw/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj src/CMakeFiles/VisionEngine.dir/common/common.cpp.obj src/CMakeFiles/VisionEngine.dir/face/detecter/centerface/centerface.cpp.obj src/CMakeFiles/VisionEngine.dir/face/detecter/detecter.cpp.obj src/CMakeFiles/VisionEngine.dir/face/detecter/mtcnn/mtcnn.cpp.obj src/CMakeFiles/VisionEngine.dir/face/detecter/retinaface/retinaface.cpp.obj src/CMakeFiles/VisionEngine.dir/face/face_engine.cpp.obj src/CMakeFiles/VisionEngine.dir/face/landmarker/insightface/insightface.cpp.obj src/CMakeFiles/VisionEngine.dir/face/landmarker/landmarker.cpp.obj src/CMakeFiles/VisionEngine.dir/face/landmarker/zqlandmarker/zqlandmarker.cpp.obj src/CMakeFiles/VisionEngine.dir/face/tracker/tracker.cpp.obj src/CMakeFiles/VisionEngine.dir/object/object/Object_detecter.cpp.obj src/CMakeFiles/VisionEngine.dir/object/object/Yolov5/yolov5.cpp.obj src/CMakeFiles/VisionEngine.dir/object/object/mobilenetssd/mobilenetssd.cpp.obj src/CMakeFiles/VisionEngine.dir/object/object_engine.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG
   OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
   POST_BUILD = cd .
@@ -203,7 +287,7 @@ build cmake_object_order_depends_target_face: phony || cmake_object_order_depend
 build src/CMakeFiles/face.dir/__/examples/test_face.cpp.obj: CXX_COMPILER__face_Release D$:/coding/git_repositories/ncnn_cv/examples/test_face.cpp || cmake_object_order_depends_target_face
   DEP_FILE = src\CMakeFiles\face.dir\__\examples\test_face.cpp.obj.d
   FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG -fdiagnostics-color=always -fopenmp
-  INCLUDES = -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
   OBJECT_DIR = src\CMakeFiles\face.dir
   OBJECT_FILE_DIR = src\CMakeFiles\face.dir\__\examples
 
@@ -218,7 +302,7 @@ build src/CMakeFiles/face.dir/__/examples/test_face.cpp.obj: CXX_COMPILER__face_
 build src/face.exe: CXX_EXECUTABLE_LINKER__face_Release src/CMakeFiles/face.dir/__/examples/test_face.cpp.obj | src/libVisionEngine.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_gapi460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_highgui460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_ml460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_objdetect460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_photo460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_stitching460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_video460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_calib3d460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_dnn460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_features2d460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_flann460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_videoio460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_imgcodecs460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_imgproc460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_core460.dll.a D$:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/lib/libncnn.a D$:/Software/tools/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/libgomp.dll.a D$:/Software/tools/MinGW/mingw64/x86_64-w64-mingw32/lib/libmingwthrd.a || src/libVisionEngine.a
   FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -O3 -DNDEBUG
   LINK_LIBRARIES = src/libVisionEngine.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_gapi460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_highgui460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_ml460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_objdetect460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_photo460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_stitching460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_video460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_calib3d460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_dnn460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_features2d460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_flann460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_videoio460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_imgcodecs460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_imgproc460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_core460.dll.a  D:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/lib/libncnn.a  D:/Software/tools/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/libgomp.dll.a  D:/Software/tools/MinGW/mingw64/x86_64-w64-mingw32/lib/libmingwthrd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  LINK_PATH = -LD:/coding/git_repositories/ncnn_cv/src/../include   -LD:/coding/git_repositories/ncnn_cv/src/common   -LD:/coding/git_repositories/ncnn_cv/src/face   -LD:/coding/git_repositories/ncnn_cv/src/face/detecter
+  LINK_PATH = -LD:/coding/git_repositories/ncnn_cv/src/../include   -LD:/coding/git_repositories/ncnn_cv/src/common   -LD:/coding/git_repositories/ncnn_cv/src/face   -LD:/coding/git_repositories/ncnn_cv/src/face/detecter   -LD:/coding/git_repositories/ncnn_cv/src/face/landmarker   -LD:/coding/git_repositories/ncnn_cv/src/face/landmarker/zqlandmarker   -LD:/coding/git_repositories/ncnn_cv/src/face/landmarker/insightface
   OBJECT_DIR = src\CMakeFiles\face.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

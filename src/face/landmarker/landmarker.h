@@ -12,8 +12,8 @@ namespace mirror {
     //抽象类
     class Landmarker {
     public:
-        Landmarker();
-        ~Landmarker();
+//        virtual Landmarker() {}
+        virtual ~Landmarker(){};
         virtual int LoadModel(const char* root_path) = 0;
         virtual int ExtractKeypoints(const cv::Mat& img_src,
                                      const cv::Rect& face, std::vector<cv::Point2f>* keypoints) = 0;
@@ -23,8 +23,8 @@ namespace mirror {
     //工厂基类
     class LandmarkerFactory{
     public:
-        Landmarker* CreateLandmaker();
-        ~LandmarkerFactory();
+        virtual Landmarker* CreateLandmarker() = 0;
+        virtual ~LandmarkerFactory(){}
     };
 
     //不同landmark检测器工厂
@@ -34,6 +34,15 @@ namespace mirror {
         Landmarker* CreateLandmarker();
         ~InsightfaceLandmarkerFactory(){}
     };
+
+    class ZQLandmarkerFacetory : public LandmarkerFactory{
+    public:
+        ZQLandmarkerFacetory(){}
+        ~ZQLandmarkerFacetory(){}
+        Landmarker* CreateLandmarker();
+    };
+
+
 }
 
 #endif //_FACE_LANDMARKER_H_
