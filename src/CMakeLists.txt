@@ -66,26 +66,32 @@ target_link_directories(VisionEngine
 #            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/face/recognizer/mobilefacenet>
 #            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/face/tracker>
 
-#            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/object>
-#            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/object/object>
-#            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/object/common>
-#            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/object/object/mobilenetssd>
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/object>
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/object/object>
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/object/common>
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/object/object/mobilenetssd>
+            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/object/object/Yolov5>
 
 #            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/classifier>
 #            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/classifier/classifier>
 #            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/classifier/classifier/mobilenet>
         )
 
-if(MIRROR_INSTALL_SDK)
-    install(TARGETS VisionEngine EXPORT VisionEngine ARCHIVE DESTINATION ${PROJECT_BINARY_DIR}/lib)
-    install(FILES
-            ${CMAKE_CURRENT_SOURCE_DIR}/common/common.h
-            ${CMAKE_CURRENT_SOURCE_DIR}/face/face_engine.h
-#            ${CMAKE_CURRENT_SOURCE_DIR}/object/object_engine.h
-#            ${CMAKE_CURRENT_SOURCE_DIR}/classifier/classifier_engine.h
-            DESTINATION ${PROJECT_BINARY_DIR}/include
-            )
-endif()
+#if(MIRROR_INSTALL_SDK)
+#    install(TARGETS VisionEngine EXPORT VisionEngine ARCHIVE DESTINATION ${PROJECT_BINARY_DIR}/lib)
+#    install(FILES
+#            ${CMAKE_CURRENT_SOURCE_DIR}/common/common.h
+#            ${CMAKE_CURRENT_SOURCE_DIR}/face/face_engine.h
+##            ${CMAKE_CURRENT_SOURCE_DIR}/object/object_engine.h
+##            ${CMAKE_CURRENT_SOURCE_DIR}/classifier/classifier_engine.h
+#            DESTINATION ${PROJECT_BINARY_DIR}/include
+#            )
+#endif()
+
+#if(MIRROR_BUILD_OBJECT)
+    add_executable(object ${CMAKE_SOURCE_DIR}/examples/yolov7.cpp)
+    target_link_libraries(object PUBLIC VisionEngine)
+#endif()
 
 if(MIRROR_BUILD_FACE)
     add_executable(face ${CMAKE_SOURCE_DIR}/examples/test_face.cpp)
@@ -98,7 +104,3 @@ if(MIRROR_BUILD_CLASSIFIER)
     target_link_libraries(classifier PUBLIC VisionEngine)
 endif()
 
-if(MIRROR_BUILD_OBJECT)
-    add_executable(object ${CMAKE_SOURCE_DIR}/examples/test_object.cpp)
-    target_link_libraries(object PUBLIC VisionEngine)
-endif()

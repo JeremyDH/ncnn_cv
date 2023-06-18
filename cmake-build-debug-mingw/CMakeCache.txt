@@ -293,6 +293,9 @@ MIRROR_BUILD_FACE:BOOL=ON
 //build object test
 MIRROR_BUILD_OBJECT:BOOL=OFF
 
+//ON
+MIRROR_BUILD_OBJECT"build object test":BOOL=OFF
+
 //install mirror library and headers
 MIRROR_INSTALL_SDK:BOOL=ON
 

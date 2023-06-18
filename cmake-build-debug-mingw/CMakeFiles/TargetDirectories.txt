@@ -1,14 +1,7 @@
 D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
 D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir
-D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/CMakeFiles/list_install_components.dir
-D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/CMakeFiles/install.dir
-D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/CMakeFiles/install/local.dir
-D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/CMakeFiles/install/strip.dir
 D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/src/CMakeFiles/VisionEngine.dir
+D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/src/CMakeFiles/object.dir
 D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/src/CMakeFiles/face.dir
 D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/src/CMakeFiles/edit_cache.dir
 D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/src/CMakeFiles/rebuild_cache.dir
-D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/src/CMakeFiles/list_install_components.dir
-D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/src/CMakeFiles/install.dir
-D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/src/CMakeFiles/install/local.dir
-D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/src/CMakeFiles/install/strip.dir

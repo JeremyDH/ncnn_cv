@@ -63,48 +63,6 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
-
-#############################################
-# Utility command for list_install_components
-
-build list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D D:\coding\git_repositories\ncnn_cv\cmake-build-debug-mingw && "D:\Software\DeepLearning\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build install: phony CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D D:\coding\git_repositories\ncnn_cv\cmake-build-debug-mingw && "D:\Software\DeepLearning\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build install/local: phony CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cmd.exe /C "cd /D D:\coding\git_repositories\ncnn_cv\cmake-build-debug-mingw && "D:\Software\DeepLearning\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build install/strip: phony CMakeFiles/install/strip.util
-
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # D:/coding/git_repositories/ncnn_cv/CMakeLists.txt
@@ -252,6 +210,13 @@ build src/CMakeFiles/VisionEngine.dir/object/object/mobilenetssd/mobilenetssd.cp
   OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
   OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\object\object\mobilenetssd
 
+build src/CMakeFiles/VisionEngine.dir/object/object/yolov7/Yolov7.cpp.obj: CXX_COMPILER__VisionEngine_Debug D$:/coding/git_repositories/ncnn_cv/src/object/object/yolov7/Yolov7.cpp || cmake_object_order_depends_target_VisionEngine
+  DEP_FILE = src\CMakeFiles\VisionEngine.dir\object\object\yolov7\Yolov7.cpp.obj.d
+  FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -g -fdiagnostics-color=always -fopenmp
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\VisionEngine.dir\object\object\yolov7
+
 build src/CMakeFiles/VisionEngine.dir/object/object_engine.cpp.obj: CXX_COMPILER__VisionEngine_Debug D$:/coding/git_repositories/ncnn_cv/src/object/object_engine.cpp || cmake_object_order_depends_target_VisionEngine
   DEP_FILE = src\CMakeFiles\VisionEngine.dir\object\object_engine.cpp.obj.d
   FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -g -fdiagnostics-color=always -fopenmp
@@ -267,13 +232,48 @@ build src/CMakeFiles/VisionEngine.dir/object/object_engine.cpp.obj: CXX_COMPILER
 #############################################
 # Link the static library src\libVisionEngine.a
 
-build src/libVisionEngine.a: CXX_STATIC_LIBRARY_LINKER__VisionEngine_Debug src/CMakeFiles/VisionEngine.dir/classifier/Classifier_Engine.cpp.obj src/CMakeFiles/VisionEngine.dir/classifier/classifier/Classifier_Detecter.cpp.obj src/CMakeFiles/VisionEngine.dir/classifier/classifier/mobilenet/mobilenet.cpp.obj src/CMakeFiles/VisionEngine.dir/cmake-build-debug-mingw/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj src/CMakeFiles/VisionEngine.dir/cmake-build-debug/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj src/CMakeFiles/VisionEngine.dir/cmake-build-release-mingw/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj src/CMakeFiles/VisionEngine.dir/common/common.cpp.obj src/CMakeFiles/VisionEngine.dir/face/detecter/centerface/centerface.cpp.obj src/CMakeFiles/VisionEngine.dir/face/detecter/detecter.cpp.obj src/CMakeFiles/VisionEngine.dir/face/detecter/mtcnn/mtcnn.cpp.obj src/CMakeFiles/VisionEngine.dir/face/detecter/retinaface/retinaface.cpp.obj src/CMakeFiles/VisionEngine.dir/face/face_engine.cpp.obj src/CMakeFiles/VisionEngine.dir/face/landmarker/insightface/insightface.cpp.obj src/CMakeFiles/VisionEngine.dir/face/landmarker/landmarker.cpp.obj src/CMakeFiles/VisionEngine.dir/face/landmarker/zqlandmarker/zqlandmarker.cpp.obj src/CMakeFiles/VisionEngine.dir/face/tracker/tracker.cpp.obj src/CMakeFiles/VisionEngine.dir/object/object/Object_detecter.cpp.obj src/CMakeFiles/VisionEngine.dir/object/object/Yolov5/yolov5.cpp.obj src/CMakeFiles/VisionEngine.dir/object/object/mobilenetssd/mobilenetssd.cpp.obj src/CMakeFiles/VisionEngine.dir/object/object_engine.cpp.obj
+build src/libVisionEngine.a: CXX_STATIC_LIBRARY_LINKER__VisionEngine_Debug src/CMakeFiles/VisionEngine.dir/classifier/Classifier_Engine.cpp.obj src/CMakeFiles/VisionEngine.dir/classifier/classifier/Classifier_Detecter.cpp.obj src/CMakeFiles/VisionEngine.dir/classifier/classifier/mobilenet/mobilenet.cpp.obj src/CMakeFiles/VisionEngine.dir/cmake-build-debug-mingw/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj src/CMakeFiles/VisionEngine.dir/cmake-build-debug/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj src/CMakeFiles/VisionEngine.dir/cmake-build-release-mingw/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj src/CMakeFiles/VisionEngine.dir/common/common.cpp.obj src/CMakeFiles/VisionEngine.dir/face/detecter/centerface/centerface.cpp.obj src/CMakeFiles/VisionEngine.dir/face/detecter/detecter.cpp.obj src/CMakeFiles/VisionEngine.dir/face/detecter/mtcnn/mtcnn.cpp.obj src/CMakeFiles/VisionEngine.dir/face/detecter/retinaface/retinaface.cpp.obj src/CMakeFiles/VisionEngine.dir/face/face_engine.cpp.obj src/CMakeFiles/VisionEngine.dir/face/landmarker/insightface/insightface.cpp.obj src/CMakeFiles/VisionEngine.dir/face/landmarker/landmarker.cpp.obj src/CMakeFiles/VisionEngine.dir/face/landmarker/zqlandmarker/zqlandmarker.cpp.obj src/CMakeFiles/VisionEngine.dir/face/tracker/tracker.cpp.obj src/CMakeFiles/VisionEngine.dir/object/object/Object_detecter.cpp.obj src/CMakeFiles/VisionEngine.dir/object/object/Yolov5/yolov5.cpp.obj src/CMakeFiles/VisionEngine.dir/object/object/mobilenetssd/mobilenetssd.cpp.obj src/CMakeFiles/VisionEngine.dir/object/object/yolov7/Yolov7.cpp.obj src/CMakeFiles/VisionEngine.dir/object/object_engine.cpp.obj
   LANGUAGE_COMPILE_FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -g
   OBJECT_DIR = src\CMakeFiles\VisionEngine.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_FILE = src\libVisionEngine.a
   TARGET_PDB = VisionEngine.a.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target object
+
+
+#############################################
+# Order-only phony target for object
+
+build cmake_object_order_depends_target_object: phony || cmake_object_order_depends_target_VisionEngine
+
+build src/CMakeFiles/object.dir/__/examples/yolov7.cpp.obj: CXX_COMPILER__object_Debug D$:/coding/git_repositories/ncnn_cv/examples/yolov7.cpp || cmake_object_order_depends_target_object
+  DEP_FILE = src\CMakeFiles\object.dir\__\examples\yolov7.cpp.obj.d
+  FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -g -fdiagnostics-color=always -fopenmp
+  INCLUDES = -ID:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/include -isystem D:/Software/tools/opencv/opencv/mingw_build/install/include
+  OBJECT_DIR = src\CMakeFiles\object.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\object.dir\__\examples
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target object
+
+
+#############################################
+# Link the executable src\object.exe
+
+build src/object.exe: CXX_EXECUTABLE_LINKER__object_Debug src/CMakeFiles/object.dir/__/examples/yolov7.cpp.obj | src/libVisionEngine.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_gapi460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_highgui460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_ml460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_objdetect460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_photo460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_stitching460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_video460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_calib3d460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_dnn460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_features2d460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_flann460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_videoio460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_imgcodecs460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_imgproc460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_core460.dll.a D$:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/lib/libncnn.a D$:/Software/tools/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/libgomp.dll.a D$:/Software/tools/MinGW/mingw64/x86_64-w64-mingw32/lib/libmingwthrd.a || src/libVisionEngine.a
+  FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -g
+  LINK_LIBRARIES = src/libVisionEngine.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_gapi460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_highgui460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_ml460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_objdetect460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_photo460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_stitching460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_video460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_calib3d460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_dnn460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_features2d460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_flann460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_videoio460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_imgcodecs460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_imgproc460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_core460.dll.a  D:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/lib/libncnn.a  D:/Software/tools/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/libgomp.dll.a  D:/Software/tools/MinGW/mingw64/x86_64-w64-mingw32/lib/libmingwthrd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_PATH = -LD:/coding/git_repositories/ncnn_cv/src/../include   -LD:/coding/git_repositories/ncnn_cv/src/common   -LD:/coding/git_repositories/ncnn_cv/src/face   -LD:/coding/git_repositories/ncnn_cv/src/face/detecter   -LD:/coding/git_repositories/ncnn_cv/src/face/landmarker   -LD:/coding/git_repositories/ncnn_cv/src/face/landmarker/zqlandmarker   -LD:/coding/git_repositories/ncnn_cv/src/face/landmarker/insightface   -LD:/coding/git_repositories/ncnn_cv/src/object   -LD:/coding/git_repositories/ncnn_cv/src/object/object   -LD:/coding/git_repositories/ncnn_cv/src/object/common   -LD:/coding/git_repositories/ncnn_cv/src/object/object/mobilenetssd   -LD:/coding/git_repositories/ncnn_cv/src/object/object/Yolov5
+  OBJECT_DIR = src\CMakeFiles\object.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\object.exe
+  TARGET_IMPLIB = src\libobject.dll.a
+  TARGET_PDB = object.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target face
@@ -302,7 +302,7 @@ build src/CMakeFiles/face.dir/__/examples/test_face.cpp.obj: CXX_COMPILER__face_
 build src/face.exe: CXX_EXECUTABLE_LINKER__face_Debug src/CMakeFiles/face.dir/__/examples/test_face.cpp.obj | src/libVisionEngine.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_gapi460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_highgui460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_ml460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_objdetect460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_photo460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_stitching460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_video460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_calib3d460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_dnn460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_features2d460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_flann460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_videoio460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_imgcodecs460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_imgproc460.dll.a D$:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_core460.dll.a D$:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/lib/libncnn.a D$:/Software/tools/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/libgomp.dll.a D$:/Software/tools/MinGW/mingw64/x86_64-w64-mingw32/lib/libmingwthrd.a || src/libVisionEngine.a
   FLAGS = -g -O2 -fPIC -std=c++11 -fopenmp -g
   LINK_LIBRARIES = src/libVisionEngine.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_gapi460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_highgui460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_ml460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_objdetect460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_photo460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_stitching460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_video460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_calib3d460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_dnn460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_features2d460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_flann460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_videoio460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_imgcodecs460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_imgproc460.dll.a  D:/Software/tools/opencv/opencv/mingw_build/install/x64/mingw/lib/libopencv_core460.dll.a  D:/coding/Deep_learning_framework/ncnn-20230517/ncnn-20230517/build/install/lib/libncnn.a  D:/Software/tools/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/libgomp.dll.a  D:/Software/tools/MinGW/mingw64/x86_64-w64-mingw32/lib/libmingwthrd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  LINK_PATH = -LD:/coding/git_repositories/ncnn_cv/src/../include   -LD:/coding/git_repositories/ncnn_cv/src/common   -LD:/coding/git_repositories/ncnn_cv/src/face   -LD:/coding/git_repositories/ncnn_cv/src/face/detecter   -LD:/coding/git_repositories/ncnn_cv/src/face/landmarker   -LD:/coding/git_repositories/ncnn_cv/src/face/landmarker/zqlandmarker   -LD:/coding/git_repositories/ncnn_cv/src/face/landmarker/insightface
+  LINK_PATH = -LD:/coding/git_repositories/ncnn_cv/src/../include   -LD:/coding/git_repositories/ncnn_cv/src/common   -LD:/coding/git_repositories/ncnn_cv/src/face   -LD:/coding/git_repositories/ncnn_cv/src/face/detecter   -LD:/coding/git_repositories/ncnn_cv/src/face/landmarker   -LD:/coding/git_repositories/ncnn_cv/src/face/landmarker/zqlandmarker   -LD:/coding/git_repositories/ncnn_cv/src/face/landmarker/insightface   -LD:/coding/git_repositories/ncnn_cv/src/object   -LD:/coding/git_repositories/ncnn_cv/src/object/object   -LD:/coding/git_repositories/ncnn_cv/src/object/common   -LD:/coding/git_repositories/ncnn_cv/src/object/object/mobilenetssd   -LD:/coding/git_repositories/ncnn_cv/src/object/object/Yolov5
   OBJECT_DIR = src\CMakeFiles\face.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -333,48 +333,6 @@ build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
 
-
-#############################################
-# Utility command for list_install_components
-
-build src/list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build src/CMakeFiles/install.util: CUSTOM_COMMAND src/all
-  COMMAND = cmd.exe /C "cd /D D:\coding\git_repositories\ncnn_cv\cmake-build-debug-mingw\src && "D:\Software\DeepLearning\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build src/install: phony src/CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build src/CMakeFiles/install/local.util: CUSTOM_COMMAND src/all
-  COMMAND = cmd.exe /C "cd /D D:\coding\git_repositories\ncnn_cv\cmake-build-debug-mingw\src && "D:\Software\DeepLearning\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build src/install/local: phony src/CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build src/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/all
-  COMMAND = cmd.exe /C "cd /D D:\coding\git_repositories\ncnn_cv\cmake-build-debug-mingw\src && "D:\Software\DeepLearning\clion\CLion 2022.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build src/install/strip: phony src/CMakeFiles/install/strip.util
-
 # =============================================================================
 # Target aliases.
 
@@ -385,6 +343,10 @@ build face: phony src/face.exe
 build face.exe: phony src/face.exe
 
 build libVisionEngine.a: phony src/libVisionEngine.a
+
+build object: phony src/object.exe
+
+build object.exe: phony src/object.exe
 
 # =============================================================================
 # Folder targets.
@@ -401,7 +363,7 @@ build all: phony src/all
 #############################################
 # Folder: D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/src
 
-build src/all: phony src/libVisionEngine.a src/face.exe
+build src/all: phony src/libVisionEngine.a src/object.exe src/face.exe
 
 # =============================================================================
 # Built-in targets

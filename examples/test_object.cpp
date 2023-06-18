@@ -11,8 +11,8 @@
 using namespace mirror;
 
 int objects_demo() {
-        std::string img_path = "./data/images/dog.jpg";
-        const char* root_path = "model";
+        std::string img_path = "D:\\coding\\git_repositories\\ncnn_cv\\data\\messi2.jpg";
+        const char* root_path = "D:\\coding\\git_repositories\\ncnn_cv\\model";
         cv::Mat img_src = cv::imread(img_path);
         //开始时间
         double start = static_cast<double>(cv::getTickCount());

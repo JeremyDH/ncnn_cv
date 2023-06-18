@@ -37,30 +37,3 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "D:/Software/tools/MinGW/mingw64/bin/objdump.exe")
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/lib/libVisionEngine.a")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  file(INSTALL DESTINATION "D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/lib" TYPE STATIC_LIBRARY FILES "D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/src/libVisionEngine.a")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/include/common.h;D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/include/face_engine.h")
-  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
-    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
-  endif()
-  file(INSTALL DESTINATION "D:/coding/git_repositories/ncnn_cv/cmake-build-debug-mingw/include" TYPE FILE FILES
-    "D:/coding/git_repositories/ncnn_cv/src/common/common.h"
-    "D:/coding/git_repositories/ncnn_cv/src/face/face_engine.h"
-    )
-endif()
-
